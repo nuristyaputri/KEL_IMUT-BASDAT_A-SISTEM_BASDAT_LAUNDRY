@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda - Bersihin Portal Pelanggan</title>
+  <link rel="stylesheet" href="../CSS/plg.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container navbar-inner">
+        <a href="dashboard.html" class="brand">
+          <div class="brand-icon">
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <div class="brand-title">Bersih<span>in</span></div>
+            <div class="brand-subtitle">Portal Pelanggan</div>
+          </div>
+        </a>
+
+        <nav class="nav-menu">
+          <a href="dashboard.html" class="nav-link active">Beranda</a>
+          <a href="pesanan.html" class="nav-link">Pesanan</a>
+          <a href="riwayat_tr.html" class="nav-link">Riwayat</a>
+          <a href="layanan.html" class="nav-link">Layanan</a>
+        </nav>
+
+        <div class="nav-user">
+          <a href="profile.html" class="user-meta" title="Profil Saya">
+            <span class="user-name">Nadia Putri</span>
+            <span class="user-id">PLG-001</span>
+          </a>
+          <a href="profile.html" class="user-avatar" title="Profil Saya">NP</a>
+          <a href="login.html" class="btn-logout" title="Keluar">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+              <polyline points="16 17 21 12 16 7"></polyline>
+              <line x1="21" y1="12" x2="9" y2="12"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-circle-tr"></div>
+      <div class="hero-circle-bottom"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <div class="hero-eyebrow">Laundry jadi lebih praktis</div>
+          <h1 class="hero-title">Hai, Nadia! Cucian bersihmu sedang kami siapkan.</h1>
+          <p class="hero-desc">Pantau proses laundry, cek estimasi selesai, dan temukan layanan yang sesuai kebutuhanmu.</p>
+          <div class="hero-actions">
+            <a href="pesanan.html" class="btn-hero-white">
+              <span>Lihat Pesanan</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </a>
+            <a href="layanan.html" class="btn-hero-outline">Pilih Layanan</a>
+          </div>
+        </div>
+
+        <div class="hero-track-card">
+          <div class="track-card-head">
+            <div class="track-head-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <div>
+              <div class="track-head-title">Lacak Cucian</div>
+              <div class="track-head-sub">Masukkan nomor transaksi pada nota</div>
+            </div>
+          </div>
+
+          <form class="track-search-row" action="pesanan.html" method="get" onsubmit="window.location.href='pesanan.html'; return false;">
+            <input type="text" name="trx" class="track-input" value="TRX-240621" placeholder="Masukkan kode TRX">
+            <button type="submit" class="btn-track-dark">Lacak</button>
+          </form>
+
+          <a href="pesanan.html" class="track-result-mini">
+            <div>
+              <div class="track-mini-meta">TRX-240621 · Nadia Putri</div>
+              <div class="track-mini-service">Cuci Kering</div>
+            </div>
+            <div class="status-badge status-process">
+              <span class="status-dot"></span>
+              <span>Diproses</span>
+            </div>
+          </a>
+
+          <div class="track-demo-hint">Coba nomor demo: TRX-240621</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Pesanan Aktif -->
+    <section class="section-block">
+      <div class="container">
+        <div class="section-head-between">
+          <div>
+            <div class="eyebrow">Pesanan aktif</div>
+            <h2 class="section-title">Status cucianmu</h2>
+            <p class="section-desc">Informasi proses diperbarui oleh pegawai laundry.</p>
+          </div>
+          <div class="section-meta-right">Estimasi selesai: 23 Juni 2024</div>
+        </div>
+
+        <div class="active-order-card">
+          <div class="order-card-top">
+            <a href="pesanan.html" class="order-id-group">
+              <div class="order-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <div>
+                <div class="order-trx-code">TRX-240621</div>
+                <div class="order-service-name">Cuci Kering</div>
+              </div>
+            </a>
+
+            <div class="order-stats-group">
+              <div class="order-stat-item">
+                <span class="order-stat-label">BERAT</span>
+                <span class="order-stat-val">4.5 kg</span>
+              </div>
+              <div class="order-stat-item">
+                <span class="order-stat-label">TOTAL</span>
+                <span class="order-stat-val">Rp 40.500</span>
+              </div>
+              <a href="pesanan.html" class="status-badge status-process">
+                <span class="status-dot"></span>
+                <span>Diproses</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="order-stepper-wrap">
+            <div class="stepper-horizontal">
+              <div class="stepper-line-track">
+                <div class="stepper-line-fill"></div>
+              </div>
+
+              <div class="stepper-step done">
+                <div class="stepper-circle">1</div>
+                <div class="stepper-label">Diterima</div>
+                <div class="stepper-time">21 Jun, 09:30</div>
+              </div>
+
+              <div class="stepper-step done">
+                <div class="stepper-circle">2</div>
+                <div class="stepper-label">Diproses</div>
+                <div class="stepper-time">21 Jun, 11:00</div>
+              </div>
+
+              <div class="stepper-step">
+                <div class="stepper-circle">3</div>
+                <div class="stepper-label">Selesai</div>
+                <div class="stepper-time">Menunggu</div>
+              </div>
+
+              <div class="stepper-step">
+                <div class="stepper-circle">4</div>
+                <div class="stepper-label">Diambil</div>
+                <div class="stepper-time">Menunggu</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Layanan Kami -->
+    <section class="section-block section-white">
+      <div class="container">
+        <div class="section-head-center">
+          <div class="eyebrow">Layanan kami</div>
+          <h2 class="section-title">Pilih sesuai kebutuhanmu</h2>
+          <p class="section-desc">Harga transparan, hasil bersih, dan selesai tepat waktu.</p>
+        </div>
+
+        <div class="services-grid-4">
+          <!-- Card 1 -->
+          <a href="layanan.html" class="service-card">
+            <div class="service-icon-box bg-tint-blue">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+              </svg>
+            </div>
+            <div class="service-name">Cuci Kering</div>
+            <div class="service-price">Rp 9.000<span> / kg</span></div>
+            <div class="service-meta-list">
+              <div class="service-meta-item">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>Estimasi 2 hari</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 2 (Featured) -->
+          <a href="pemesanan.html" class="service-card featured">
+            <span class="badge-popular-solid">Populer</span>
+            <div class="service-icon-box bg-tint-purple">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+              </svg>
+            </div>
+            <div class="service-name">Cuci + Setrika</div>
+            <div class="service-price">Rp 12.000<span> / kg</span></div>
+            <div class="service-meta-list">
+              <div class="service-meta-item">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>Estimasi 3 hari</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 3 -->
+          <a href="layanan.html" class="service-card">
+            <div class="service-icon-box bg-tint-orange">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+              </svg>
+            </div>
+            <div class="service-name">Express</div>
+            <div class="service-price">Rp 20.000<span> / kg</span></div>
+            <div class="service-meta-list">
+              <div class="service-meta-item">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>Estimasi 1 hari</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 4 -->
+          <a href="layanan.html" class="service-card">
+            <div class="service-icon-box bg-tint-green">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+              </svg>
+            </div>
+            <div class="service-name">Bed Cover</div>
+            <div class="service-price">Rp 25.000<span> / kg</span></div>
+            <div class="service-meta-list">
+              <div class="service-meta-item">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>Estimasi 3 hari</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: CTA Hubungi Laundry -->
+    <section class="section-block">
+      <div class="container">
+        <div class="cta-banner">
+          <div>
+            <h3 class="cta-title">Ada yang ingin ditanyakan?</h3>
+            <p class="cta-desc">Tim kami siap membantu informasi pesanan dan layanan laundry.</p>
+          </div>
+          <a href="pesanan.html" class="btn-cta-white">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>Hubungi Laundry</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>© 2024 Bersihin Laundry. Bersih, rapi, tepat waktu.</div>
+        <div>Jl. Melati No. 12, Bandung · 08.00–20.00 WIB</div>
+      </div>
+    </footer>
+  </div>
+  <script src="../JS/PELANGGAN.JS"></script>
+</body>
+</html>
+

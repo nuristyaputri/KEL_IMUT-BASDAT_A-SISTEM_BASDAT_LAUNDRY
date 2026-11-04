@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Pemilik - Bersihin Laundry</title>
+  <link rel="stylesheet" href="../CSS/pml.css">
+</head>
+<body>
+  <div class="login-page">
+    <!-- Panel Kiri (Biru) -->
+    <aside class="login-left">
+      <div class="login-brand">
+        <div class="login-brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+          </svg>
+        </div>
+        <div class="login-brand-text">
+          <div class="brand-name">Bersih<span>in</span></div>
+          <div class="brand-sub">Owner Management</div>
+        </div>
+      </div>
+
+      <div class="login-hero">
+        <div class="login-hero-icon">
+          <svg width="31" height="31" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+            <polyline points="17 6 23 6 23 12"></polyline>
+          </svg>
+        </div>
+
+        <h2>Semua informasi usaha dalam satu pandangan.</h2>
+        <p>Pantau transaksi, pembayaran, kinerja pegawai, dan perkembangan layanan laundry dengan data yang lebih terstruktur.</p>
+
+        <div class="login-features">
+          <div class="login-feature-card">
+            <strong>Ringkas</strong>
+            <span>Dashboard usaha</span>
+          </div>
+          <div class="login-feature-card">
+            <strong>Terpantau</strong>
+            <span>Pembayaran</span>
+          </div>
+          <div class="login-feature-card">
+            <strong>Terukur</strong>
+            <span>Kinerja tim</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="login-left-footer">
+        &copy; 2024 Bersihin Laundry &middot; Akses khusus pemilik
+      </div>
+    </aside>
+
+    <!-- Panel Kanan (Form Login) -->
+    <main class="login-right">
+      <div class="login-form-container">
+        <div class="login-tag">Akses pemilik</div>
+        <h1>Selamat datang kembali</h1>
+        <p class="login-desc">Masuk untuk memeriksa operasional dan pembayaran laundry.</p>
+
+        <form class="login-form" action="dashboard.html" method="get" onsubmit="window.location.href='dashboard.html'; return false;">
+          <div class="form-group">
+            <label class="form-label" for="kode_pemilik">Kode pemilik</label>
+            <div class="input-box">
+              <input type="text" id="kode_pemilik" name="kode_pemilik" value="PML-001" placeholder="PML-001" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="password">Kata sandi</label>
+            <div class="input-box">
+              <input type="password" id="password" name="password" placeholder="Masukkan kata sandi" required>
+            </div>
+          </div>
+
+          <div class="login-options">
+            <label class="remember-label">
+              <input type="checkbox" checked>
+              <span>Ingat saya</span>
+            </label>
+            <a href="profile.html" class="forgot-link">Lupa kata sandi?</a>
+          </div>
+
+          <button type="submit" class="btn-login-submit">
+            <span>Masuk ke Dashboard</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </form>
+
+        <div class="login-demo-pill">
+          Akun demo PML-001 sudah terisi.
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="../JS/PEMILIK.JS"></script>
+</body>
+</html>

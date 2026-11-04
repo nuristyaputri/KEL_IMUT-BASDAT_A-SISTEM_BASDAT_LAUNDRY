@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laporan Usaha - Bersihin Laundry</title>
+  <link rel="stylesheet" href="../CSS/pml.css">
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <a href="dashboard.html" class="sidebar-brand">
+        <div class="sidebar-brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+          </svg>
+        </div>
+        <div class="sidebar-brand-text">
+          <div class="brand-title">Bersih<span>in</span></div>
+          <div class="brand-subtitle">Owner Management</div>
+        </div>
+      </a>
+
+      <div class="sidebar-section-label">Menu pemilik</div>
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+            <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+            <rect x="14" y="14" width="7" height="7" rx="1"></rect>
+            <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+          </svg>
+          <span>Dashboard</span>
+        </a>
+        <a href="transaksi.html" class="nav-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+          </svg>
+          <span>Transaksi</span>
+        </a>
+        <a href="pembayaran.html" class="nav-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+            <line x1="2" y1="10" x2="22" y2="10"></line>
+          </svg>
+          <span>Pembayaran</span>
+        </a>
+        <a href="dtpegawai.html" class="nav-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          <span>Pegawai</span>
+        </a>
+        <a href="layanan.html" class="nav-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+          </svg>
+          <span>Layanan</span>
+        </a>
+        <a href="laporan.html" class="nav-item active">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+            <polyline points="17 6 23 6 23 12"></polyline>
+          </svg>
+          <span>Laporan</span>
+          <span class="nav-dot"></span>
+        </a>
+      </nav>
+
+      <div class="sidebar-spacer"></div>
+
+      <div class="sidebar-status-box">
+        <div class="status-heading">STATUS USAHA</div>
+        <div class="status-indicator">
+          <span class="green-dot"></span>
+          <span>Operasional aktif</span>
+        </div>
+        <div class="status-hours">Buka hari ini sampai pukul 20.00 WIB.</div>
+      </div>
+
+      <a href="login.html" class="sidebar-logout">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+          <polyline points="16 17 21 12 16 7"></polyline>
+          <line x1="21" y1="12" x2="9" y2="12"></line>
+        </svg>
+        <span>Keluar</span>
+      </a>
+    </aside>
+
+    <!-- Main Content Wrapper -->
+    <div class="main-wrapper">
+      <!-- Topbar -->
+      <header class="topbar">
+        <div class="topbar-left">
+          <div class="topbar-date">Senin, 24 Juni 2024</div>
+          <div class="topbar-title">Laporan</div>
+        </div>
+        <a href="profile.html" class="user-profile-trigger">
+          <div class="user-info">
+            <div class="user-name">Raka Wijaya</div>
+            <div class="user-role">Pemilik Laundry</div>
+          </div>
+          <div class="user-avatar">RW</div>
+        </a>
+      </header>
+
+      <!-- Page Content -->
+      <main class="page-content">
+        <div class="page-header">
+          <div class="page-header-text">
+            <h1>Laporan Usaha</h1>
+            <p>Ringkasan transaksi dan pembayaran periode Juni 2024.</p>
+          </div>
+          <button type="button" class="btn-primary" onclick="window.print()">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+            </svg>
+            <span>Cetak Laporan</span>
+          </button>
+        </div>
+
+        <!-- 4 Summary Cards -->
+        <section class="stats-grid-4">
+          <div class="stat-card-report">
+            <div class="label">Pendapatan Bersih</div>
+            <div class="value">Rp 204.000</div>
+          </div>
+          <div class="stat-card-report">
+            <div class="label">Piutang</div>
+            <div class="value">Rp 94.500</div>
+          </div>
+          <div class="stat-card-report">
+            <div class="label">Jumlah Transaksi</div>
+            <div class="value">6 transaksi</div>
+          </div>
+          <div class="stat-card-report">
+            <div class="label">Pembayaran Lunas</div>
+            <div class="value">4 transaksi</div>
+          </div>
+        </section>
+
+        <!-- 2-Column Section: Performa Layanan & Ringkasan Operasional -->
+        <section class="grid-2-equal">
+          <!-- Left: Performa Layanan -->
+          <div class="panel-box lg-pad">
+            <div class="panel-box-title">
+              <h3>Performa Layanan</h3>
+              <p>Jumlah penggunaan berdasarkan jenis layanan</p>
+            </div>
+
+            <div class="report-bars-list">
+              <div class="report-bar-item">
+                <div class="top-row">
+                  <span class="name">Cuci Kering</span>
+                  <span class="count">2 transaksi</span>
+                </div>
+                <div class="report-progress-track">
+                  <div class="report-progress-fill" style="width: 33.3%;"></div>
+                </div>
+              </div>
+
+              <div class="report-bar-item">
+                <div class="top-row">
+                  <span class="name">Cuci + Setrika</span>
+                  <span class="count">2 transaksi</span>
+                </div>
+                <div class="report-progress-track">
+                  <div class="report-progress-fill" style="width: 33.3%;"></div>
+                </div>
+              </div>
+
+              <div class="report-bar-item">
+                <div class="top-row">
+                  <span class="name">Express</span>
+                  <span class="count">2 transaksi</span>
+                </div>
+                <div class="report-progress-track">
+                  <div class="report-progress-fill" style="width: 33.3%;"></div>
+                </div>
+              </div>
+
+              <div class="report-bar-item">
+                <div class="top-row">
+                  <span class="name">Bed Cover</span>
+                  <span class="count">0 transaksi</span>
+                </div>
+                <div class="report-progress-track">
+                  <div class="report-progress-fill" style="width: 8%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Ringkasan Operasional -->
+          <div class="panel-box lg-pad">
+            <div class="panel-box-title">
+              <h3>Ringkasan Operasional</h3>
+              <p>Kondisi pengerjaan laundry saat ini</p>
+            </div>
+
+            <div class="ops-summary-list">
+              <div class="ops-summary-item">
+                <div class="ops-summary-left">
+                  <span class="status-pill diproses">
+                    <span class="dot"></span>
+                    Diproses
+                  </span>
+                  <span class="label-text">Diproses</span>
+                </div>
+                <span class="count-val">2</span>
+              </div>
+
+              <div class="ops-summary-item">
+                <div class="ops-summary-left">
+                  <span class="status-pill selesai">
+                    <span class="dot"></span>
+                    Selesai
+                  </span>
+                  <span class="label-text">Selesai</span>
+                </div>
+                <span class="count-val">2</span>
+              </div>
+
+              <div class="ops-summary-item">
+                <div class="ops-summary-left">
+                  <span class="status-pill diambil">
+                    <span class="dot"></span>
+                    Diambil
+                  </span>
+                  <span class="label-text">Diambil</span>
+                </div>
+                <span class="count-val">2</span>
+              </div>
+            </div>
+
+            <div class="period-note-box">
+              <div class="note-tag">CATATAN PERIODE</div>
+              <p>Pendapatan tercatat hanya berasal dari transaksi berstatus lunas.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script src="../JS/PEMILIK.JS"></script>
+</body>
+</html>

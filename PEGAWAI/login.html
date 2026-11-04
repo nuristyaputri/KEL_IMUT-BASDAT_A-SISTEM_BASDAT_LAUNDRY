@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Pegawai - Bersihin Laundry</title>
+  <link rel="stylesheet" href="../CSS/pgw.css">
+</head>
+<body>
+  <div class="login-page">
+    <!-- Panel Kiri (Biru) -->
+    <aside class="login-left">
+      <div class="login-brand">
+        <div class="login-brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+          </svg>
+        </div>
+        <div class="login-brand-text">
+          <h1>Bersihin</h1>
+          <p>Laundry Management</p>
+        </div>
+      </div>
+
+      <div class="login-hero">
+        <div class="login-hero-badge">Sistem Operasional Laundry</div>
+        <h2>Kelola operasional laundry dalam satu sistem.</h2>
+        <p>Catat pelanggan, layanan, transaksi, berat cucian, pembayaran, dan status pengerjaan secara lebih terstruktur.</p>
+
+        <div class="login-features">
+          <div class="login-feature-card">
+            <strong>Terstruktur</strong>
+            <span>Data pelanggan</span>
+          </div>
+          <div class="login-feature-card">
+            <strong>Efisien</strong>
+            <span>Kelola transaksi</span>
+          </div>
+          <div class="login-feature-card">
+            <strong>Akurat</strong>
+            <span>Status cucian</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="login-left-footer">
+        &copy; 2024 Bersihin Laundry &middot; Sistem khusus pegawai
+      </div>
+    </aside>
+
+    <!-- Panel Kanan (Form Login) -->
+    <main class="login-right">
+      <div class="login-card-wrap">
+        <div class="login-card">
+          <div class="login-card-tag">Selamat Datang Kembali</div>
+          <h2>Masuk ke Sistem</h2>
+          <p class="login-card-desc">Gunakan kode pegawai yang terdaftar untuk mengakses sistem.</p>
+
+          <form class="login-form" action="dashboard.html" method="get" onsubmit="window.location.href='dashboard.html'; return false;">
+            <div class="form-group">
+              <label class="form-label" for="kode_pegawai">Kode pegawai</label>
+              <div class="input-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#90A1B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                <input type="text" id="kode_pegawai" name="kode_pegawai" value="PGW-001" placeholder="Contoh: PGW-001" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="password">Kata sandi</label>
+              <div class="input-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#90A1B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                <input type="password" id="password" name="password" value="12345678" placeholder="Masukkan kata sandi" required>
+              </div>
+            </div>
+
+            <div class="login-options">
+              <label class="remember-label">
+                <input type="checkbox" checked>
+                <span>Ingat saya</span>
+              </label>
+              <a href="keamananakun.html" class="forgot-link">Lupa kata sandi?</a>
+            </div>
+
+            <button type="submit" class="btn-login-submit">
+              <span>Masuk ke Sistem</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </form>
+
+          <div class="login-demo-box">
+            Akun demo <strong>PGW-001</strong> sudah terisi. Klik tombol masuk untuk melanjutkan.
+          </div>
+        </div>
+
+        <div class="login-bottom-note">
+          Lupa akses akun? <strong>Hubungi pemilik laundry.</strong>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="../JS/PEGAWAI.JS"></script>
+</body>
+</html>
